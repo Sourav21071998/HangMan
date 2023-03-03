@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter names of 2 players"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        android:id="@+id/textEnterNames"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Player 1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:layout_below="@+id/textEnterNames"
+        android:id="@+id/namePlayer1"
+        >
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/namePlayer1"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:hint="Player 2"
+        android:id="@+id/namePlayer2"
+        ></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/namePlayer2"
+        android:layout_marginTop="20dp"
+        android:text="Start"
+        android:minHeight="48dp"
+        android:minWidth="100dp"
+        android:id="@+id/startButton"
+        android:onClick="startNextActivity"
+        ></Button>
+
+
+</RelativeLayout>

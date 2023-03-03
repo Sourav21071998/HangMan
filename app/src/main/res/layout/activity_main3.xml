@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/namesEditText"
+        android:minHeight="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Hello"
+        android:textStyle="italic">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/namesEditText"
+        android:layout_marginTop="20dp"
+        android:minHeight="54dp"
+        android:textSize="24dp"
+        android:text="Guess word"
+        android:id="@+id/guessWordText">
+    </TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Guess character present in the film name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/guessWordText"
+        android:id="@+id/characterEditText"
+        android:minHeight="48dp">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Guess"
+        android:id="@+id/guessButton"
+        android:layout_below="@+id/characterEditText"
+        android:layout_marginTop="16dp"
+        android:onClick="guessAction"
+        ></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/guessButton"
+        android:layout_marginTop="10dp"
+        android:text="Chances left: 5"
+        android:id="@+id/chancesTextView"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chancesTextView"
+        android:text="Used Characters: None"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/usedCharacters"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usedCharacters"
+        android:id="@+id/hintTexts"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+</RelativeLayout>
